@@ -1,7 +1,7 @@
 # 概要
 syou551.devの開発ブランチ
 
-#　ページ内容
+# ページ内容
 * profile
 * work example
 * reccomend
@@ -9,3 +9,4 @@ syou551.devの開発ブランチ
 # 実装
 Next.jsで実装
 cloudflare Pagesでホスト
+S
