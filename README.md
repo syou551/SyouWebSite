@@ -9,4 +9,3 @@ syou551.devの開発ブランチ
 # 実装
 Next.jsで実装
 cloudflare Pagesでホスト
-S
