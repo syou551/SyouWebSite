@@ -42,7 +42,7 @@ export default function Header() {
                 key={link.name}
                 href={link.href}
                 className={clsx(
-                  'flex grow items-center justify-center ont-mono gap-2 rounded-md bg-white p-3 text-md font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3',
+                  'flex grow transition items-center justify-center hover:-translate-y hover:scale-110 ont-mono gap-2 rounded-md bg-white p-3 text-md font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3',
                   {
                     'bg-sky-100 text-blue-600': pathname === link.href,
                   },
@@ -94,7 +94,7 @@ export default function Header() {
                   key={link.name}
                   href={link.href}
                   className={clsx(
-                    'items-center justify-center bg-white ont-mono text-lg',
+                    'items-center justify-center transition bg-white ont-mono text-lg hover:-translate-y hover:scale-110',
                     {
                       'bg-sky-100 text-blue-600': pathname === link.href,
                     },

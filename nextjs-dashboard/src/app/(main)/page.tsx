@@ -7,22 +7,30 @@ export default function Home() {
     <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
       <div className="w-full flex-none md:w-64">{/*side*/}
         <div className="flex h-full flex-col px-3 py-4 md:px-2 items-center">
-            <Image src="/icon.jpg" width={200} height={200} alt="icon" className="rounded-full"></Image>
+            <a href="https://www.nijisanji.jp/talents/l/toko-inui">
+              <Image src="/icon.jpg" width={200} height={200} alt="icon" className="transition rounded-full hover:-translate-y hover:scale-105"></Image>
+            </a>
             <p className="font-mono mt-6 text-4xl align-bottom">Syou</p>
             <div className="align-center mt-4">
               <a href={"https://twitter.com/1512155Hiroto"}>
-                <span className="i-bxl-twitter w-8 h-8 bg-gray-500"></span>
+                <span className="transition i-bxl-twitter w-8 h-8 bg-gray-500 hover:bg-blue-500 hover:-translate-y hover:scale-125"></span>
               </a>
               <a href="https://github.com/syou551">
-                <span className="i-bxl-github w-8 h-8 bg-gray-500 ml-3"></span>
+                <span className="transition i-bxl-github w-8 h-8 bg-gray-500 ml-3 hover:bg-black hover:-translate-y hover:scale-125"></span>
               </a>
             </div>
-            <p className="ont-mono mt-6">Kyoto Institute of Technology</p>
-            <p className="ont-mono mt-2">Infomation Tech Cource</p>
+            <p className="transition ont-mono mt-6 hover:bg-gray-100 hover:rounded-xl hover:-translate-y hover:scale-105">
+              <a href="https://www.kit.ac.jp" className="ml-2 mr-2">Kyoto Institute of Technology</a>
+            </p>
+            <p className="transition ont-mono mt-2 hover:bg-gray-100 hover:rounded-xl hover:-translate-y hover:scale-105">
+              <a href="https://www.is.kit.ac.jp/" className="ml-2 mr-2">Infomation Tech Cource</a>
+            </p>
             
             <p className="ont-mono mt-2">Undergraduate Stu.</p>
             <p className="ont-mono mt-2">・</p>
-            <p className="ont-mono mt-2">KMC member</p>
+            <p className="transition ont-mono mt-2 hover:bg-gray-100 hover:rounded-xl hover:-translate-y hover:scale-105">
+              <a href="https://www.kmc.gr.jp/" className="ml-2 mr-2">KMC member</a>
+            </p>
         </div>
       </div>
       <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{/*Page*/}
