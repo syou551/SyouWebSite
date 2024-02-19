@@ -89,19 +89,19 @@ export default function Header() {
         >
           {links.map((link) => {
             return (
-              <li key={link.name}>
+              <li key={link.name} className='transition hover:-translate-y rounded-md hover:scale-110 hover:bg-sky-100'>
                 <Link
                   key={link.name}
                   href={link.href}
                   className={clsx(
-                    'items-center justify-center transition bg-white ont-mono text-lg hover:-translate-y hover:scale-110',
+                    'items-center justify-center bg-white ont-mono text-lg hover:text-blue-600',
                     {
                       'bg-sky-100 text-blue-600': pathname === link.href,
                     },
                   )}
                   onClick={handleMenuClose}
                 >
-                  <p className="flex md:block">{link.name}</p>
+                  <p className="flex md:block ml-3 mr-3">{link.name}</p>
                 </Link>
               </li>
             );
