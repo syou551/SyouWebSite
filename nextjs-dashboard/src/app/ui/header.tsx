@@ -42,7 +42,7 @@ export default function Header() {
                 key={link.name}
                 href={link.href}
                 className={clsx(
-                  'flex grow items-center justify-center ont-mono gap-2 rounded-md bg-white p-3 text-md font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3',
+                  'flex grow transition items-center justify-center hover:-translate-y hover:scale-110 ont-mono gap-2 rounded-md bg-white p-3 text-md font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3',
                   {
                     'bg-sky-100 text-blue-600': pathname === link.href,
                   },
@@ -89,19 +89,19 @@ export default function Header() {
         >
           {links.map((link) => {
             return (
-              <li key={link.name}>
+              <li key={link.name} className='transition hover:-translate-y rounded-md hover:scale-110 hover:bg-sky-100'>
                 <Link
                   key={link.name}
                   href={link.href}
                   className={clsx(
-                    'items-center justify-center bg-white ont-mono text-lg',
+                    'items-center justify-center bg-white ont-mono text-lg hover:text-blue-600',
                     {
                       'bg-sky-100 text-blue-600': pathname === link.href,
                     },
                   )}
                   onClick={handleMenuClose}
                 >
-                  <p className="flex md:block">{link.name}</p>
+                  <p className="flex md:block ml-3 mr-3">{link.name}</p>
                 </Link>
               </li>
             );

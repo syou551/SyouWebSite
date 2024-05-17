@@ -15,7 +15,7 @@ const config: Config = {
     iconsPlugin({
       // 利用したい icon collection を利用する
       // https://icones.js.org/
-      collections: getIconCollections(["tabler", "lucide", "bxl", "skill-icons", "svglogos", "simple-icons"]),
+      collections: getIconCollections(["tabler", "lucide", "bxl", "simple-icons", "iconoir"]),
     }),
   ],
   theme: {
