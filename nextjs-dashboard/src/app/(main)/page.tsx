@@ -12,7 +12,7 @@ export default function Home() {
             </a>
             <p className="font-mono mt-6 text-4xl align-bottom">Syou</p>
             <div className="align-center mt-4">
-              <a href={"https://twitter.com/1512155Hiroto"}>
+              <a href={"https://twitter.com/hfs_114154"}>
                 <span className="transition i-bxl-twitter w-8 h-8 bg-gray-500 hover:bg-blue-500 hover:-translate-y hover:scale-125"></span>
               </a>
               <a href="https://github.com/syou551">
@@ -45,7 +45,7 @@ export default function Home() {
               <span className="i-bxl-react w-20 h-20 lg:w-40 lg:h-40  bg-gray-500"></span>
               <span className="i-simple-icons-typescript w-20 h-20 lg:w-40 lg:h-40 bg-gray-500"></span>
               <span className="i-simple-icons-csharp w-20 h-20 lg:w-40 lg:h-40 bg-gray-500"></span>
-              <span className="i-bxl-java w-20 h-20 lg:w-40 lg:h-40 bg-gray-500"></span>
+              <span className="i-bxl-python w-20 h-20 lg:w-40 lg:h-40 bg-gray-500"></span>
               <span className="i-simple-icons-go w-20 h-20 lg:w-40 lg:h-40 bg-gray-500"></span>
               <p className="flex mt-28 ml-3 ont-mono text-lg">etc.</p>
             </div>
