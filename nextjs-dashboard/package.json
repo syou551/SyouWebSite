@@ -12,10 +12,12 @@
     "@egoist/tailwindcss-icons": "^1.7.4",
     "@heroicons/react": "^2.1.1",
     "clsx": "^2.1.0",
+    "dayjs": "^1.11.11",
     "heroicons": "^2.1.1",
     "next": "14.1.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "rss-parser": "^3.13.0"
   },
   "devDependencies": {
     "@iconify/json": "^2.2.183",
