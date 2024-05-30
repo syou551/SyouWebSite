@@ -17,7 +17,7 @@ export default function Card(
     ): JSX.Element{
 
     return(
-        <div className="grid transition justify-center items-center bg-gray-100 hover:bg-blue-100 rounded-md shadow-md mr-5 ml-5 mb-5 hover:-translate-y hover:scale-105">
+        <div className="grid transition justify-center items-center h-full bg-gray-100 hover:bg-blue-100 rounded-md shadow-md mr-5 ml-5 mb-5 hover:translate-y-2 hover:scale-105">
             <button onClick={()=>location.replace(href)}>
                 <div className="grid mr-5 ml-5 mt-3 mb-3">
                     <div className="flex w-full justify-center items-center">

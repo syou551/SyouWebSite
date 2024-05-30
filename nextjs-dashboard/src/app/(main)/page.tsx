@@ -50,6 +50,35 @@ export default function Home() {
               <p className="flex mt-28 ml-3 ont-mono text-lg">etc.</p>
             </div>
         </div>
+        <div className="flex justify-center">
+          <div className="text-xl mb-5 mt-4">バイト/インターンでの開発経験</div>
+        </div>
+        <div className="flex justify-center">
+          <div className="grid">
+            <li>C# (WPFフレームワークを用いたWindowsアプリケーション開発): バイト </li>
+            <li>Python (VPSとのファイル共有等を行う簡易プログラム): 同上 </li>
+            <li>React (不動産情報検索Webアプリ):  いい生活サマーインターン2023</li>
+          </div>
+        </div>
+        <div className="flex justify-center mt-4">
+          <div className="text-xl mb-5">個人開発経験</div>
+        </div>
+        <div className="flex justify-center">
+          <div className="grid">
+            <li>React+Vite (画像共有Webアプリ) </li>
+            <li>Next.js (旅程管理アプリ, ファイル管理アプリ フロントエンド) </li>
+            <li>Go (ファイル管理アプリ バックエンド) </li>
+          </div>
+        </div>
+        <div className="flex justify-center mt-4">
+          <div className="text-xl mb-5">その他（研究等）</div>
+        </div>
+        <div className="flex justify-center">
+          <div className="grid">
+            <li>Shelter Navi「コロナ禍における避難支援ツール」(2020-2021) JST-GSC ROOTプログラムでの研究開発 </li>
+            <li>上記研究成果を電子情報通信学会 LOIS研究会(2021/1/21)において発表</li>
+          </div>
+        </div>
       </div>
 
 
