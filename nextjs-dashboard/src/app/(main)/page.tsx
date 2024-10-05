@@ -12,7 +12,7 @@ export default function Home() {
             </a>
             <p className="font-mono mt-6 text-4xl align-bottom">Syou</p>
             <div className="align-center mt-4">
-              <a href={"https://twitter.com/hfs_114154"}>
+              <a href={"https://twitter.com/syou_551"}>
                 <span className="transition i-bxl-twitter w-8 h-8 bg-gray-500 hover:bg-blue-500 hover:-translate-y hover:scale-125"></span>
               </a>
               <a href="https://github.com/syou551">
