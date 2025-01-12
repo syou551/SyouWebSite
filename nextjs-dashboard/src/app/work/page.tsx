@@ -1,10 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Card from "@/app/ui/card";
 import BlogCard from "@/app/ui/blogcard";
 import Parser from "rss-parser";
 import dayjs from 'dayjs'
 
-export default async function Page(){
+async function Page_async(){
     const feed = await new Parser().parseURL('https://note.com/syou_551/rss');
     const feed2 = await new Parser().parseURL('https://qiita.com/syou551/feed');
 
@@ -35,4 +37,8 @@ export default async function Page(){
             </div>
         </>
     )
+}
+
+export default function Page(){
+    return <Page_async></Page_async>
 }
