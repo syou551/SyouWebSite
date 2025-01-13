@@ -27,7 +27,7 @@ export default function Page(){
             setIsLoading(false);
         }
         FetchArticles();
-    },[]);
+    },[isLoading]);
 
     return(
         <>
