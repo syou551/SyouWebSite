@@ -18,12 +18,14 @@ export default function Card(
     ): JSX.Element{
 
     return(
-        <Link href={href} className="grid transition justify-center items-center h-full bg-gray-100 hover:bg-blue-100 rounded-md shadow-md mr-5 ml-5 mb-5 hover:translate-y-2 hover:scale-105"
-            target='_blank'>
+        <div className="flex transition justify-center items-center bg-gray-100 hover:bg-blue-100 rounded-md shadow-md mx-5 mb-5 md:h-5/6 md:hover:translate-y-2 md:hover:scale-105 hover:translate-y-1 hover:scale-105">
+            <Link href={href} className='grid w-full md:py-10' target='_blank'>
                 <div className="grid justify-center items-center mr-5 ml-5 mt-3 mb-3">
                     <div className="flex w-full justify-center items-center">
                         <Image src={ImageSrc} width={200} height={200} alt="icon" className=""></Image>
                     </div>
+                </div>
+                <div className="grid justify-center items-center mr-5 ml-5 mt-3 mb-3">
                     <div className="flex justify-center ont-mono text-lg mt-5">{Title}</div>
                     <div className="ml-3 mr-3">
                         <p className="ont-mono mt-3"> {description} </p>
@@ -32,6 +34,7 @@ export default function Card(
                         </div>
                     </div>
                 </div>
-        </Link>
+            </Link>
+        </div>
     )
 }

@@ -1,12 +1,33 @@
+"use client";
+
 import Image from "next/image";
 import Card from "@/app/ui/card";
+import {useState, useEffect} from "react";
 import BlogCard from "@/app/ui/blogcard";
 import Parser from "rss-parser";
-import dayjs from 'dayjs'
+import { parse } from "path";
 
-export default async function Page(){
-    const feed = await new Parser().parseURL('https://note.com/syou_551/rss');
-    const feed2 = await new Parser().parseURL('https://qiita.com/syou551/feed');
+interface Article {
+    title: string;
+    link: string;
+    pubDate: string;
+    site: string
+}
+
+export default function Page(){
+    const [isLoading, setIsLoading] = useState(true);
+    const [articles, setArticles] = useState<Article[]>([]);
+
+    useEffect(()=>{
+        const FetchArticles = async () =>{
+            if(!isLoading) return;
+            const res = await fetch('/api/rss');
+            const data = await res.json();
+            setArticles(data);
+            setIsLoading(false);
+        }
+        FetchArticles();
+    },[isLoading]);
 
     return(
         <>
@@ -22,17 +43,18 @@ export default async function Page(){
             <h1 className="grid ont-mono h-300 ml-3 mr-3 mt-10 text-xl shadow-md rounded-xl bg-lime-100">
             <p className="ml-5 mt-3 mb-3 h-30">記事</p>
             </h1>
-            <div className="grid mt-5 justify-center items-center md:grid-cols-2">
-                {feed.items.map((item, index)=>
-                    <BlogCard key={index} Title={item.title!} date={item.pubDate? dayjs(item.pubDate).format('YYYY-MM-DD') : ''}
-                    description="note" href={item.link!}/>
-                )}
-                {feed2.items.map((item, index) =>
-                    <BlogCard key={index} Title={item.title!} date={item.pubDate? dayjs(item.pubDate).format('YYYY-MM-DD') : ''}
-                    description="Qiita" href={item.link!}/>
-                )}
-                
-            </div>
+            {isLoading ?
+                <div className="flex justify-center items-center my-8">
+                    <p>読み込み中...</p>
+                </div>
+                :
+                <div className="grid mt-5 justify-center items-center md:grid-cols-2">
+                    {articles?.map((item, index)=>
+                        <BlogCard key={index} Title={item.title!} date={item.pubDate}
+                        description={item.site} href={item.link!}/>
+                    )}
+                </div>
+            }
         </>
     )
 }
