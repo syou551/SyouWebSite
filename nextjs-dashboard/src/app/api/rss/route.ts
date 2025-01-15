@@ -17,6 +17,7 @@ interface Article {
 const RSSLinks : RSSSite[] = [
    {url : 'https://note.com/syou_551/rss', name : "note"},
    {url: 'https://qiita.com/syou551/feed', name : "Qiita"},
+   {url: 'https://syou551.hatenablog.com/rss', name: "hatenaブログ"}
 ]
 
 const parser = new Parser();

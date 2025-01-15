@@ -25,7 +25,8 @@ export default function BlogCard(
                     <div className="flex absolute bottom-2">
                         <p className={clsx("ont-mono mt-3",{
                          'bg-green-200' : description == 'Qiita' ,
-                         'bg-gray-300'  : description == 'note'
+                         'bg-gray-300'  : description == 'note' ,
+                         'bg-blue-100' : description == 'hatenaブログ' ,
                         },
                          "rounded-md px-2")}> {description} </p>
                         <p className="ont-mono mt-3 px-2 text-gray-400"> {date} </p>
