@@ -29,7 +29,8 @@ export async function GET() {
     try{
         let articles : Article[] = [];
         let promises = RSSLinks.map(async(site)=>{
-            const feed = await parser.parseURL(site.url);
+            const res = await fetch(site.url, { next: { revalidate: 10 } });
+            const feed = await parser.parseString(await res.text());
             let _articles = feed.items.map((item)=>({
                 title : item.title!,
                 link : item.link!,

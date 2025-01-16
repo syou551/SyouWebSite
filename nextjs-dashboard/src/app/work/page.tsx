@@ -41,7 +41,7 @@ export default function Page(){
                 },
                 body: JSON.stringify(RSSLinks)
             });
-            const res = await fetch('/api/rss', { cache: 'no-store' });
+            const res = await fetch('/api/rss', { next: { revalidate: 5 } });
             const data = await res.json();
             setArticles(data);
             setIsLoading(false);
