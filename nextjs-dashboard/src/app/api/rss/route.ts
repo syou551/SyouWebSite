@@ -3,7 +3,6 @@
 import { NextResponse } from 'next/server';
 import Parser from 'rss-parser';
 import dayjs from 'dayjs'
-import { revalidatePath } from 'next/cache';
 
 interface RSSSite{
     url : string,
@@ -25,9 +24,9 @@ const RSSLinks : RSSSite[] = [
 
 const parser = new Parser();
 
+
 export async function GET() {
     try{
-        revalidatePath('/rss');
         let articles : Article[] = [];
         let promises = RSSLinks.map(async(site)=>{
             const feed = await parser.parseURL(site.url);

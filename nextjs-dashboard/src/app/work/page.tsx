@@ -6,6 +6,8 @@ import {useState, useEffect} from "react";
 import BlogCard from "@/app/ui/blogcard";
 import Parser from "rss-parser";
 import { parse } from "path";
+import { revalidatePath } from "next/cache";
+import handleRevalidate from "@/app/actions/refetch";
 
 interface Article {
     title: string;
@@ -26,6 +28,7 @@ export default function Page(){
             setArticles(data);
             setIsLoading(false);
         }
+        handleRevalidate("/work");
         FetchArticles();
     },[isLoading]);
 
