@@ -1,6 +1,9 @@
+'use server'
+
 import { NextResponse } from 'next/server';
 import Parser from 'rss-parser';
 import dayjs from 'dayjs'
+import handleRevalidate from '@/app/actions/refetch';
 
 interface RSSSite{
     url : string,
@@ -20,13 +23,14 @@ const RSSLinks : RSSSite[] = [
    {url: 'https://syou551.hatenablog.com/rss', name: "hatenaブログ"}
 ]
 
-const parser = new Parser();
+const parser = new Parser();  
 
 export async function GET() {
     try{
         let articles : Article[] = [];
         let promises = RSSLinks.map(async(site)=>{
-            const feed = await parser.parseURL(site.url);
+            const res = await fetch(site.url, { next: { revalidate: 10 } });
+            const feed = await parser.parseString(await res.text());
             let _articles = feed.items.map((item)=>({
                 title : item.title!,
                 link : item.link!,

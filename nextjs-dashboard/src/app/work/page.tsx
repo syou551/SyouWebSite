@@ -6,6 +6,8 @@ import {useState, useEffect} from "react";
 import BlogCard from "@/app/ui/blogcard";
 import Parser from "rss-parser";
 import { parse } from "path";
+import { revalidatePath } from "next/cache";
+import handleRevalidate from "@/app/actions/refetch";
 
 interface Article {
     title: string;
@@ -14,6 +16,17 @@ interface Article {
     site: string
 }
 
+interface RSSSite{
+    url : string,
+    name: string,
+}
+
+const RSSLinks : RSSSite[] = [
+    {url : 'https://note.com/syou_551/rss', name : "note"},
+    {url: 'https://qiita.com/syou551/feed', name : "Qiita"},
+    {url: 'https://syou551.hatenablog.com/rss', name: "hatenaブログ"}
+ ]
+
 export default function Page(){
     const [isLoading, setIsLoading] = useState(true);
     const [articles, setArticles] = useState<Article[]>([]);
@@ -21,7 +34,14 @@ export default function Page(){
     useEffect(()=>{
         const FetchArticles = async () =>{
             if(!isLoading) return;
-            const res = await fetch('/api/rss');
+            let refetch = await fetch('api/revalidation',{
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(RSSLinks)
+            });
+            const res = await fetch('/api/rss', { next: { revalidate: 5 } });
             const data = await res.json();
             setArticles(data);
             setIsLoading(false);
