@@ -4,10 +4,6 @@ import Image from "next/image";
 import Card from "@/app/ui/card";
 import {useState, useEffect} from "react";
 import BlogCard from "@/app/ui/blogcard";
-import Parser from "rss-parser";
-import { parse } from "path";
-import { revalidatePath } from "next/cache";
-import handleRevalidate from "@/app/actions/refetch";
 
 interface Article {
     title: string;
@@ -43,6 +39,7 @@ export default function Page(){
             });*/
             const res = await fetch('/api/rss', { cache: 'no-store' });
             const data = await res.json();
+            if(data.body == 'Internal error') return;
             setArticles(data);
             setIsLoading(false);
         }

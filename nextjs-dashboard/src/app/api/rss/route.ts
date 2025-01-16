@@ -1,6 +1,7 @@
 'use server'
 
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
+import { headers } from 'next/headers';
 import Parser from 'rss-parser';
 import dayjs from 'dayjs'
 import handleRevalidate from '@/app/actions/refetch';
@@ -28,8 +29,16 @@ const parser = new Parser();
 export async function GET() {
     try{
         let articles : Article[] = [];
+        const apiBase = 'https://fix-feed.syouwebsite.pages.dev';
         let promises = RSSLinks.map(async(site)=>{
-            const res = await fetch(site.url, {cache : "no-store"});
+             // ホストとプロトコルを取得
+            const res = await fetch(`${apiBase}/api/revalidate`,{
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(site)
+            });;
             const feed = await parser.parseString(await res.text());
             let _articles = feed.items.map((item)=>({
                 title : item.title!,
@@ -45,5 +54,6 @@ export async function GET() {
         return NextResponse.json(articles);
     }catch(err){
         console.log(err);
+        return NextResponse.json({body : "Internal error"});
     }
 }
