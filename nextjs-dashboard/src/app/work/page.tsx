@@ -34,13 +34,13 @@ export default function Page(){
     useEffect(()=>{
         const FetchArticles = async () =>{
             if(!isLoading) return;
-            let refetch = await fetch('api/revalidation',{
+            /*let refetch = await fetch('api/revalidation',{
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(RSSLinks)
-            });
+            });*/
             const res = await fetch('/api/rss', { cache: 'no-store' });
             const data = await res.json();
             setArticles(data);
