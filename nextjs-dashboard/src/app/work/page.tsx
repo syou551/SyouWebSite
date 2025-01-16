@@ -29,6 +29,7 @@ export default function Page(){
             setIsLoading(false);
         }
         handleRevalidate("/api/rss");
+        handleRevalidate("/work");
         FetchArticles();
     },[isLoading]);
 
