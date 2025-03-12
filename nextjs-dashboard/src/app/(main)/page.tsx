@@ -38,7 +38,7 @@ export default function Home() {
           <p className="ml-5 mt-3 mb-3 h-30">My profile</p>
         </h1>
         <div className="flex justify-center w-full">
-          <p className="text-xl mb-5">言語/開発経験</p>
+          <p className="text-xl mb-5">Language/Skill Set</p>
         </div>
         <div className="flex justify-center">
           <div className="grid justify-center grid-cols-3 gap-3">
@@ -47,36 +47,168 @@ export default function Home() {
               <span className="i-simple-icons-csharp w-20 h-20 lg:w-40 lg:h-40 bg-gray-500"></span>
               <span className="i-bxl-python w-20 h-20 lg:w-40 lg:h-40 bg-gray-500"></span>
               <span className="i-simple-icons-go w-20 h-20 lg:w-40 lg:h-40 bg-gray-500"></span>
-              <p className="flex mt-28 ml-3 ont-mono text-lg">etc.</p>
+              <span className="i-bxl-docker w-20 h-20 lg:w-40 lg:h-40 bg-gray-500"></span>
             </div>
         </div>
         <div className="flex justify-center">
-          <div className="text-xl mb-5 mt-4">バイト/インターンでの開発経験</div>
+          <div className="text-xl mb-5 mt-4">Experience</div>
         </div>
-        <div className="flex justify-center">
-          <div className="grid">
-            <li>C# (WPFフレームワークを用いたWindowsアプリケーション開発): バイト </li>
-            <li>Python (VPSとのファイル共有等を行う簡易プログラム): 同上 </li>
-            <li>React (不動産情報検索Webアプリ):  いい生活サマーインターン2023</li>
+        <div className="grid justify-center">
+          <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
+            <span className="i-iconamoon-arrow-right-6-circle mr-4 w-7 h-7 lg:w-8 lg:h-8 bg-lime-400"></span>
+            <p className="flex justify-left items-left mt-1 text-md">2022/4</p>
+          </div>
+          <div className="flex justify-left">
+            <div className="grid">
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+            </div>
+            <div className="grid">
+              <p className="flex justify-left items-left mt-1 mx-10 text-md">京都工芸繊維大学 入学</p>
+              <p className="flex justify-left items-left mt-1 mx-10 text-sm text-gray-400">工芸科学部 情報工学課程</p>
+            </div>
+          </div>
+          <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
+            <span className="i-iconamoon-arrow-right-6-circle mr-4 w-7 h-7 lg:w-8 lg:h-8 bg-lime-400"></span>
+            <p className="flex justify-left items-left mt-1 text-md">2023/2 〜 現在</p>
+          </div>
+          <div className="flex justify-left">
+            <div className="grid">
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+            </div>
+            <div className="grid">
+              <p className="flex justify-left items-left mt-1 mx-10 text-md">株式会社 演算工房 アルバイト勤務</p>
+              <p className="flex justify-left items-left mt-1 mx-10 text-sm text-gray-400">C#(WPF)を用いたWindowsアプリケーション開発</p>
+            </div>
+          </div>
+          <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
+            <span className="i-iconamoon-arrow-right-6-circle mr-4 w-7 h-7 lg:w-8 lg:h-8 bg-lime-400"></span>
+            <p className="flex justify-left items-left mt-1 text-md">2023/5</p>
+          </div>
+          <div className="flex justify-left">
+            <div className="grid">
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+            </div>
+            <div className="grid">
+              <p className="flex justify-left items-left mt-1 mx-10 text-md">セキュリティ・ミニキャンプ in 東京 参加</p>
+              <p className="flex justify-left items-left mt-1 mx-10 text-sm text-gray-400">Cトラック サンドボックス上でのマルウェア動的解析入門</p>
+            </div>
+          </div>
+          <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
+            <span className="i-iconamoon-arrow-right-6-circle mr-4 w-7 h-7 lg:w-8 lg:h-8 bg-lime-400"></span>
+            <p className="flex justify-left items-left mt-1 text-md">2023/9</p>
+          </div>
+          <div className="flex justify-left">
+            <div className="grid">
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+            </div>
+            <div className="transition grid hover:bg-gray-100 hover:rounded-xl hover:shadow-md">
+              <Link href={"https://note.com/syou_551/n/ne0332ab0cd26"} target="_blank">
+                <p className="flex justify-left items-left mt-1 mx-10 text-md">株式会社 いい生活 インターン参加</p>
+                <p className="flex justify-left items-left mt-1 lg:mt-2 mx-10 text-sm text-gray-400">React + Vue.js を用いた物件検索Webアプリ作成</p>
+              </Link>
+            </div>
+          </div>
+          <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
+            <span className="i-iconamoon-arrow-right-6-circle mr-4 w-7 h-7 lg:w-8 lg:h-8 bg-lime-400"></span>
+            <p className="flex justify-left items-left mt-1 text-md">2025/3 〜 現在</p>
+          </div>
+          <div className="flex justify-left">
+            <div className="grid">
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+            </div>
+            <div className="grid">
+              <p className="flex justify-left items-left mt-1 mx-10 text-md">株式会社 いい生活 長期インターン参加</p>
+              <p className="flex justify-left items-left mt-1 mx-10 text-sm text-gray-400">C#およびTypeScriptを用いたアプリケーション開発業務</p>
+            </div>
           </div>
         </div>
         <div className="flex justify-center mt-4">
-          <div className="text-xl mb-5">個人開発経験</div>
+          <div className="text-xl mb-5">Personal Project</div>
         </div>
-        <div className="flex justify-center">
-          <div className="grid">
-            <li>React+Vite (画像共有Webアプリ) </li>
-            <li>Next.js (旅程管理アプリ, ファイル管理アプリ フロントエンド) </li>
-            <li>Go (ファイル管理アプリ バックエンド) </li>
+        <div className="grid justify-center">
+          <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
+            <span className="i-iconamoon-arrow-right-6-circle mr-4 w-7 h-7 lg:w-8 lg:h-8 bg-lime-400"></span>
+            <p className="flex justify-left items-left mt-1 text-md">2023</p>
+          </div>
+          <div className="flex justify-left">
+            <div className="grid">
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+            </div>
+            <div className="grid">
+              <p className="flex justify-left items-left mt-1 mx-10 text-md">画像共有Webアプリ</p>
+              <p className="flex justify-left items-left mt-1 mx-10 text-sm text-gray-400">React+ViteとGoを用いてタグ付けなどを実現</p>
+            </div>
+          </div>
+          <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
+            <span className="i-iconamoon-arrow-right-6-circle mr-4 w-7 h-7 lg:w-8 lg:h-8 bg-lime-400"></span>
+            <p className="flex justify-left items-left mt-1 text-md">2024 〜 現在（開発中）</p>
+          </div>
+          <div className="flex justify-left">
+            <div className="grid">
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+            </div>
+            <div className="grid">
+              <p className="flex justify-left items-left mt-1 mx-10 text-md">旅程管理アプリ</p>
+              <p className="flex justify-left items-left mt-1 mx-10 text-sm text-gray-400">Next.jsのフロントエンドとJavaのバックエンドを用いて実現</p>
+            </div>
+          </div>
+          <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
+            <span className="i-iconamoon-arrow-right-6-circle mr-4 w-7 h-7 lg:w-8 lg:h-8 bg-lime-400"></span>
+            <p className="flex justify-left items-left mt-1 text-md">2025</p>
+          </div>
+          <div className="flex justify-left">
+            <div className="grid">
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+            </div>
+            <div className="transition grid hover:bg-gray-100 hover:rounded-xl hover:shadow-md">
+              <Link href={"/service/fileup"} target="_blank">
+                <p className="flex justify-left items-left mt-1 mx-10 text-md">ファイルアップローダー</p>
+                <p className="flex justify-left items-left mt-1 mx-10 text-sm text-gray-400">Next.jsのフロントエンドとGoのバックエンド等を用いて実現</p>
+              </Link>
+            </div>
           </div>
         </div>
         <div className="flex justify-center mt-4">
-          <div className="text-xl mb-5">その他（研究等）</div>
+          <div className="text-xl mb-5">Other Experience（Research etc...）</div>
         </div>
-        <div className="flex justify-center">
-          <div className="grid">
-            <li>Shelter Navi「コロナ禍における避難支援ツール」(2020-2021) JST-GSC ROOTプログラムでの研究開発 </li>
-            <li>上記研究成果を電子情報通信学会 LOIS研究会(2021/1/21)において発表</li>
+        <div className="grid justify-center">
+          <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
+            <span className="i-iconamoon-arrow-right-6-circle mr-4 w-7 h-7 lg:w-8 lg:h-8 bg-lime-400"></span>
+            <p className="flex justify-left items-left mt-1 text-md">2020/3 〜 2021/3</p>
+          </div>
+          <div className="flex justify-left">
+            <div className="grid">
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+            </div>
+            <div className="grid">
+              <p className="flex justify-left items-left mt-1 mx-10 text-md">Shelter Navi「コロナ禍における避難支援ツール」</p>
+              <p className="flex justify-left items-left mt-1 mx-10 text-sm text-gray-400"> JST-GSC ROOTプログラムでの研究開発</p>
+            </div>
+          </div>
+          <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
+            <span className="i-iconamoon-arrow-right-6-circle mr-4 w-7 h-7 lg:w-8 lg:h-8 bg-lime-400"></span>
+            <p className="flex justify-left items-left mt-1 text-md">2021/1/21</p>
+          </div>
+          <div className="flex justify-left">
+            <div className="grid">
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+            </div>
+            <div className="transition grid hover:bg-gray-100 hover:rounded-xl hover:shadow-md">
+              <Link href={"https://cs27.org/achieve/data/pdf/1418.pdf"} target="_blank">
+                <p className="flex justify-left items-left mt-1 mx-10 text-md">電子情報通信学会 LOIS研究会 研究発表</p>
+                <p className="flex justify-left items-left mt-1 lg:mt-2 mx-10 text-sm text-gray-400"> JST-GSC ROOTプログラムでの研究開発成果を発表および論文作成</p>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
