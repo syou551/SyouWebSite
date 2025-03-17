@@ -224,7 +224,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center mt-4">
-          <div className="text-xl mb-5">Other Experience（Research etc...）</div>
+          <div className="text-xl mb-5">Other Experience（Research, Certification etc...）</div>
         </div>
         <div className="grid justify-center">
           <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
@@ -255,6 +255,32 @@ export default function Home() {
                 <p className="flex justify-left items-left mt-1 mx-10 text-md">電子情報通信学会 LOIS研究会 研究発表</p>
                 <p className="flex justify-left items-left mt-1 lg:mt-2 mx-10 text-sm text-gray-400"> JST-GSC ROOTプログラムでの研究開発成果を発表および論文作成</p>
               </Link>
+            </div>
+          </div>
+          <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
+            <span className="i-iconamoon-arrow-right-6-circle mr-4 w-7 h-7 lg:w-8 lg:h-8 bg-lime-400"></span>
+            <p className="flex justify-left items-left mt-1 text-md">2024/4</p>
+          </div>
+          <div className="flex justify-left">
+            <div className="grid">
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+            </div>
+            <div className="grid">
+              <p className="flex justify-left items-left mt-4 mx-10 text-md">基本情報技術者試験 合格</p>
+            </div>
+          </div>
+          <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
+            <span className="i-iconamoon-arrow-right-6-circle mr-4 w-7 h-7 lg:w-8 lg:h-8 bg-lime-400"></span>
+            <p className="flex justify-left items-left mt-1 text-md">2024/7</p>
+          </div>
+          <div className="flex justify-left">
+            <div className="grid">
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+            </div>
+            <div className="grid">
+              <p className="flex justify-left items-left mt-4 mx-10 text-md">応用情報技術者試験 合格</p>
             </div>
           </div>
         </div>
