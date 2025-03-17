@@ -9,7 +9,7 @@ import { parse } from "path";
 import { revalidatePath } from "next/cache";
 import handleRevalidate from "@/app/actions/refetch";
 
-interface Article {
+export interface Article {
     title: string;
     link: string;
     pubDate: string;

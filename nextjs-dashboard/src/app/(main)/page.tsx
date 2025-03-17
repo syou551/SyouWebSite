@@ -1,8 +1,27 @@
+'use client'
+
 import Image from "next/image";
 import Link from 'next/link';
 import Header from '@/app/ui/header';
+import { useEffect, useState } from "react";
+import BlogCard from "../ui/blogcard";
+import {Article} from "@/app/work/page"
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState<Boolean>(true);
+  const [articles, setArticles] = useState<Article[]>([]);
+
+  useEffect(()=>{
+    const FetchArticles = async () =>{
+      if(!isLoading) return;
+      const res = await fetch('/api/rss', { next: { revalidate: 5 } });
+      const data = await res.json();
+      setArticles(data);
+      setIsLoading(false);
+    }
+    FetchArticles();
+  });
+
   return (
     <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
       <div className="w-full flex-none md:w-64">{/*side*/}
@@ -35,6 +54,34 @@ export default function Home() {
       </div>
       <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{/*Page*/}
         <h1 className="grid ont-mono h-300 mb-10 text-xl w-full shadow-md rounded-xl bg-lime-100">
+          <p className="ml-5 mt-3 mb-3 h-30">Recent Blogs</p>
+        </h1>
+        {isLoading ?
+                <div className="flex justify-center items-center my-8">
+                    <p>読み込み中...</p>
+                </div>
+                :
+                <>
+                  <div className="grid mt-5 justify-center items-center md:grid-cols-2">
+                      {articles?.map((item, index)=>
+                        { if(index<2){
+                            return (<BlogCard key={index} Title={item.title!} date={item.pubDate}
+                            description={item.site} href={item.link!}/>);
+                          }else{}
+                        }
+                      )}
+                  </div>
+
+                  <div className="flex relative justfy-center items-center mt-4 mb-10">
+                    <p className="transition grid absolute right-2 px-4 py-2 rounded-md hover:bg-gray-100 hover:scale-105 hover:text-blue-600">
+                      <Link href={"/work"}>
+                        {"Show Other Blogs ->"}
+                      </Link>
+                    </p>
+                  </div>
+                </>
+            }
+        <h1 className="grid ont-mono mt-5 h-300 mb-10 text-xl w-full shadow-md rounded-xl bg-lime-100">
           <p className="ml-5 mt-3 mb-3 h-30">My profile</p>
         </h1>
         <div className="flex justify-center w-full">
