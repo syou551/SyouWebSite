@@ -8,7 +8,7 @@ export default function Page(){
                 <p className="ml-5 mt-3 mb-3 h-30">概要</p>
             </h1>
             <div className="flex mt-5 justify-center items-left">
-                <p className="flex justify-center items-left">
+                <p className="flex justify-center items-left mx-5">
                 syou551.devのサービスでの認証を行う基盤。keycloakを用いて実現している。<br/>
                 現在は、fileupサービスでの認証に使用している。<br/>
                 </p>
