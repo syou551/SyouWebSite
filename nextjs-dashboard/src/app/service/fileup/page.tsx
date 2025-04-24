@@ -8,7 +8,7 @@ export default function Page(){
                 <p className="ml-5 mt-3 mb-3 h-30">概要</p>
             </h1>
             <div className="flex mt-5 justify-center items-left">
-                <p className="flex justify-center items-left">
+                <p className="flex justify-center items-left mx-5">
                 個人開発で作成したファイルアップローダーを個人使用のためにデプロイしたサービス。<br/>
                 GoogleをIdPとしたSSOで認可を行い、authサービスのロールで認証を行う仕組み。<br/>
                 （個人使用想定のため、管理者のみアクセス可能となるように設定）

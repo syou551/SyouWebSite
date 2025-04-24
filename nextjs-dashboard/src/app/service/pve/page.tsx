@@ -8,7 +8,7 @@ export default function Page(){
                 <p className="ml-5 mt-3 mb-3 h-30">概要</p>
             </h1>
             <div className="flex mt-5 justify-center items-left">
-                <p className="flex justify-center items-left">
+                <p className="flex justify-center items-left mx-5">
                 VM運用基盤であるProxmoxのWebUI（非公開）
                 </p>
             </div>
