@@ -95,6 +95,9 @@ export default function Home() {
               <span className="i-bxl-python w-20 h-20 lg:w-40 lg:h-40 bg-gray-500"></span>
               <span className="i-simple-icons-go w-20 h-20 lg:w-40 lg:h-40 bg-gray-500"></span>
               <span className="i-bxl-docker w-20 h-20 lg:w-40 lg:h-40 bg-gray-500"></span>
+              <span className="i-bxl-kubernetes w-20 h-20 lg:w-40 lg:h-40 bg-gray-500"></span>
+              <span className="i-bxl-tux w-20 h-20 lg:w-40 lg:h-40 bg-gray-500"></span>
+              <span className="i-bxl-unity w-20 h-20 lg:w-40 lg:h-40 bg-gray-500"></span>
             </div>
         </div>
         <div className="flex justify-center">
@@ -171,6 +174,34 @@ export default function Home() {
             <div className="grid">
               <p className="flex justify-left items-left mt-1 mx-10 text-md">株式会社 いい生活 長期インターン参加</p>
               <p className="flex justify-left items-left mt-1 mx-10 text-sm text-gray-400">C#およびTypeScriptを用いたアプリケーション開発業務</p>
+            </div>
+          </div>
+          <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
+            <span className="i-iconamoon-arrow-right-6-circle mr-4 w-7 h-7 lg:w-8 lg:h-8 bg-lime-400"></span>
+            <p className="flex justify-left items-left mt-1 text-md">2025/7</p>
+          </div>
+          <div className="flex justify-left">
+            <div className="grid">
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+            </div>
+            <div className="grid">
+              <p className="flex justify-left items-left mt-1 mx-10 text-md">株式会社 CyberAgent インターン参加</p>
+              <p className="flex justify-left items-left mt-1 mx-10 text-sm text-gray-400">物理サーバー構築＆ネットワーク構築体験型1dayインターンシップ</p>
+            </div>
+          </div>
+          <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
+            <span className="i-iconamoon-arrow-right-6-circle mr-4 w-7 h-7 lg:w-8 lg:h-8 bg-lime-400"></span>
+            <p className="flex justify-left items-left mt-1 text-md">2025/8</p>
+          </div>
+          <div className="flex justify-left">
+            <div className="grid">
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+            </div>
+            <div className="grid">
+              <p className="flex justify-left items-left mt-1 mx-10 text-md">株式会社 はてな インターン参加</p>
+              <p className="flex justify-left items-left mt-1 mx-10 text-sm text-gray-400">前半(講義)パート参加</p>
             </div>
           </div>
         </div>
