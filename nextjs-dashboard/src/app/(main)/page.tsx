@@ -285,6 +285,19 @@ export default function Home() {
               <p className="flex justify-left items-left mt-4 mx-10 text-md">応用情報技術者試験 合格</p>
             </div>
           </div>
+          <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
+            <span className="i-iconamoon-arrow-right-6-circle mr-4 w-7 h-7 lg:w-8 lg:h-8 bg-lime-400"></span>
+            <p className="flex justify-left items-left mt-1 text-md">2025/7</p>
+          </div>
+          <div className="flex justify-left">
+            <div className="grid">
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+            </div>
+            <div className="grid">
+              <p className="flex justify-left items-left mt-4 mx-10 text-md">情報処理安全確保支援士試験 合格</p>
+            </div>
+          </div>
         </div>
       </div>
 
