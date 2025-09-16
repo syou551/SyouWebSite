@@ -4,9 +4,10 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 import { useState } from "react";
+import path from 'path';
 
 const links = [
-  { name: 'home', href: '/'},
+  { name: 'home', href: '/' },
   { name: 'work', href: '/work'},
   { name: 'service', href: '/service'},
   /*{
@@ -45,7 +46,7 @@ export default function Header() {
                 className={clsx(
                   'flex grow transition items-center justify-center hover:-translate-y hover:scale-110 ont-mono gap-2 rounded-md bg-white p-3 text-md font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3',
                   {
-                    'bg-sky-100 text-blue-600': pathname === link.href,
+                    'bg-sky-100 text-blue-600': pathname.replaceAll('/','').includes(link.href.replaceAll('/','')) && (link.href.replaceAll('/','') !== '' || pathname === path.sep)
                   },
                 )}
               >

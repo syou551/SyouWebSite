@@ -63,6 +63,8 @@ export default function Page(){
                 href="https://github.com/syou551/TravelPlannerApp" linkDescription="githubへ"/>
                 <Card ImageSrc="/noimg.png" Title="MyFileUploader" description="自作のファイルアップローダー" linkDescription="githubへ" 
                 href="https://github.com/syou551/dirShareApp"/>
+                <Card ImageSrc="/noimg.png" Title="「推し雑」" description="推しYoutuberの雑談配信通知スマホアプリ" linkDescription="githubへ" 
+                href="https://github.com/syou551/OshiZatsu"/>
             </div>
             <h1 className="grid ont-mono h-300 ml-3 mr-3 mt-10 text-xl shadow-md rounded-xl bg-lime-100">
             <p className="ml-5 mt-3 mb-3 h-30">記事</p>

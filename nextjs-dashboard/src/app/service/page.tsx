@@ -22,6 +22,8 @@ export default function Page(){
                 href="/service/fileup" linkDescription="詳細"/>
                 <ServiceCard ImageSrc="https://coder.syou551.dev/_static/src/browser/media/favicon.ico" Title="coder" description="code-server(VScodeのWeb版)" linkDescription="詳細（github) " 
                 href="https://github.com/syou551/homeServer/tree/main/code-server"/>
+                <ServiceCard ImageSrc="https://overleaf.syou551.dev/favicon.svg" Title="overleaf" description="クラウド型TeXエディタOSS overleafのセルフホスト" linkDescription="詳細" 
+                href="/service/overleaf"/>
             </div>
         </>
     )

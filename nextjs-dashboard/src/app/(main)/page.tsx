@@ -185,9 +185,11 @@ export default function Home() {
               <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
               <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
             </div>
-            <div className="grid">
-              <p className="flex justify-left items-left mt-1 mx-10 text-md">株式会社 CyberAgent インターン参加</p>
-              <p className="flex justify-left items-left mt-1 mx-10 text-sm text-gray-400">物理サーバー構築＆ネットワーク構築体験型1dayインターンシップ</p>
+            <div className="transition grid hover:bg-gray-100 hover:rounded-xl hover:shadow-md">
+              <Link href={"https://note.com/syou_551/n/n919ac6efc97a"} target="_blank">
+                <p className="flex justify-left items-left mt-1 mx-10 text-md">株式会社 CyberAgent インターン参加</p>
+                <p className="flex justify-left items-left mt-1 lg:mt-2 mx-10 text-sm text-gray-400">物理サーバー構築＆ネットワーク構築体験型1dayインターンシップ</p>
+              </Link>
             </div>
           </div>
           <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
@@ -199,9 +201,27 @@ export default function Home() {
               <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
               <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
             </div>
+            <div className="transition grid hover:bg-gray-100 hover:rounded-xl hover:shadow-md">
+              <Link href={"https://syou551.hatenablog.com/entry/2025/08/22/165430"} target="_blank">
+                <p className="flex justify-left items-left mt-1 mx-10 text-md">株式会社 はてな インターン参加</p>
+                <p className="flex justify-left items-left mt-1 lg:mt-2 mx-10 text-sm text-gray-400">前半(講義)パート参加</p>
+              </Link>
+            </div>
+          </div>
+          <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
+            <span className="i-iconamoon-arrow-right-6-circle mr-4 w-7 h-7 lg:w-8 lg:h-8 bg-lime-400"></span>
+            <p className="flex justify-left items-left mt-1 text-md">2025/11</p>
+          </div>
+          <div className="flex justify-left">
             <div className="grid">
-              <p className="flex justify-left items-left mt-1 mx-10 text-md">株式会社 はてな インターン参加</p>
-              <p className="flex justify-left items-left mt-1 mx-10 text-sm text-gray-400">前半(講義)パート参加</p>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+            </div>
+            <div className="transition grid hover:bg-gray-100 hover:rounded-xl hover:shadow-md">
+              <Link href={"https://internetweek.jp/2025/"} target="_blank">
+                <p className="flex justify-left items-left mt-1 mx-10 text-md">Internet Week 2025 NOCチーム参加</p>
+                <p className="flex justify-left items-left mt-1 lg:mt-2 mx-10 text-sm text-gray-400">Cableチーム</p>
+              </Link>
             </div>
           </div>
         </div>
@@ -252,6 +272,22 @@ export default function Home() {
               <Link href={"/service/fileup"} target="_blank">
                 <p className="flex justify-left items-left mt-1 mx-10 text-md">ファイルアップローダー</p>
                 <p className="flex justify-left items-left mt-1 mx-10 text-sm text-gray-400">Next.jsのフロントエンドとGoのバックエンド等を用いて実現</p>
+              </Link>
+            </div>
+          </div>
+          <div className="flex justify-left shadow-md rounded-md bg-lime-50 mt-4">
+            <span className="i-iconamoon-arrow-right-6-circle mr-4 w-7 h-7 lg:w-8 lg:h-8 bg-lime-400"></span>
+            <p className="flex justify-left items-left mt-1 text-md">2025</p>
+          </div>
+          <div className="flex justify-left">
+            <div className="grid">
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+              <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
+            </div>
+            <div className="transition grid hover:bg-gray-100 hover:rounded-xl hover:shadow-md">
+              <Link href={"https://github.com/syou551/OshiZatsu"} target="_blank">
+                <p className="flex justify-left items-left mt-1 mx-10 text-md">推しの雑談配信通知アプリ「推し雑」</p>
+                <p className="flex justify-left items-left mt-1 mx-10 text-sm text-gray-400">FlutterのフロントエンドとGoのバックエンドを用いてgRPCで実現</p>
               </Link>
             </div>
           </div>
