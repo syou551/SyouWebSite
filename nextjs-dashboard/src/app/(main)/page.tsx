@@ -218,7 +218,7 @@ export default function Home() {
               <span className="i-iconamoon-arrow-down-2-bold w-5 h-5 lg:w-8 lg:h-8 bg-gray-400"></span>
             </div>
             <div className="transition grid hover:bg-gray-100 hover:rounded-xl hover:shadow-md">
-              <Link href={"https://internetweek.jp/2025/"} target="_blank">
+              <Link href={"https://syou551.hatenablog.com/entry/2026/02/07/171006"} target="_blank">
                 <p className="flex justify-left items-left mt-1 mx-10 text-md">Internet Week 2025 NOCチーム参加</p>
                 <p className="flex justify-left items-left mt-1 lg:mt-2 mx-10 text-sm text-gray-400">Cableチーム</p>
               </Link>
